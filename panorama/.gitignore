@@ -1,0 +1,49 @@
+# Ignora pastas de build
+bin/
+obj/
+out/
+Debug/
+Release/
+
+# Ignora arquivos do Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignora arquivos de build gerados
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.dbmdl
+
+# Ignora pacotes locais e arquivos de lock
+*.nupkg
+packages/
+*.lock.json
+
+# Ignora configurações temporárias
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Ignora configurações de publicação
+*.publish.xml
+*.pubxml
+*.pubxml.user
+
+# Ignora arquivos do sistema
+Thumbs.db
+Desktop.ini
+
+# Ignora arquivos do Git que não devem subir
+*.swp
+*.swn
+*.swo
+
+# Ignorar vídeos
+*.mp4
