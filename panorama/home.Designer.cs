@@ -55,14 +55,17 @@
             toolStripMenuItem11 = new ToolStripMenuItem();
             loginToolStripMenuItem = new ToolStripMenuItem();
             cadastrarToolStripMenuItem1 = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripMenuItem();
             pictureBox2 = new PictureBox();
             button1 = new Button();
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            panel1 = new Panel();
             groupBox2.SuspendLayout();
             menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // principalToolStripMenuItem
@@ -161,15 +164,14 @@
             // 
             // groupBox2
             // 
+            groupBox2.Anchor = AnchorStyles.None;
             groupBox2.BackColor = Color.CadetBlue;
             groupBox2.Controls.Add(lbl_sistemapedido);
             groupBox2.Controls.Add(btn_pedido);
             groupBox2.Controls.Add(btn_cadastrar);
-            groupBox2.Location = new Point(389, 155);
-            groupBox2.Margin = new Padding(3, 4, 3, 4);
+            groupBox2.Location = new Point(278, 106);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(3, 4, 3, 4);
-            groupBox2.Size = new Size(534, 328);
+            groupBox2.Size = new Size(429, 246);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "                                     ";
@@ -181,9 +183,9 @@
             lbl_sistemapedido.FlatStyle = FlatStyle.Flat;
             lbl_sistemapedido.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_sistemapedido.ForeColor = Color.Transparent;
-            lbl_sistemapedido.Location = new Point(47, 36);
+            lbl_sistemapedido.Location = new Point(41, 27);
             lbl_sistemapedido.Name = "lbl_sistemapedido";
-            lbl_sistemapedido.Size = new Size(457, 38);
+            lbl_sistemapedido.Size = new Size(356, 30);
             lbl_sistemapedido.TabIndex = 0;
             lbl_sistemapedido.Text = "CADASTRE E VISUALIZE PEDIDOS";
             // 
@@ -194,10 +196,9 @@
             btn_pedido.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_pedido.Image = (Image)resources.GetObject("btn_pedido.Image");
             btn_pedido.ImageAlign = ContentAlignment.TopCenter;
-            btn_pedido.Location = new Point(309, 116);
-            btn_pedido.Margin = new Padding(3, 4, 3, 4);
+            btn_pedido.Location = new Point(230, 87);
             btn_pedido.Name = "btn_pedido";
-            btn_pedido.Size = new Size(162, 121);
+            btn_pedido.Size = new Size(142, 91);
             btn_pedido.TabIndex = 2;
             btn_pedido.Text = "CLIQUE PARA VER PEDIDOS";
             btn_pedido.TextAlign = ContentAlignment.BottomCenter;
@@ -211,10 +212,9 @@
             btn_cadastrar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_cadastrar.Image = (Image)resources.GetObject("btn_cadastrar.Image");
             btn_cadastrar.ImageAlign = ContentAlignment.TopCenter;
-            btn_cadastrar.Location = new Point(64, 116);
-            btn_cadastrar.Margin = new Padding(3, 4, 3, 4);
+            btn_cadastrar.Location = new Point(41, 87);
             btn_cadastrar.Name = "btn_cadastrar";
-            btn_cadastrar.Size = new Size(167, 121);
+            btn_cadastrar.Size = new Size(146, 91);
             btn_cadastrar.TabIndex = 1;
             btn_cadastrar.Text = "CLIQUE PARA CRIAR UM NOVO PEDIDO";
             btn_cadastrar.TextAlign = ContentAlignment.BottomCenter;
@@ -223,13 +223,14 @@
             // 
             // menuStrip2
             // 
+            menuStrip2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             menuStrip2.BackColor = Color.CadetBlue;
+            menuStrip2.Dock = DockStyle.None;
             menuStrip2.ImageScalingSize = new Size(20, 20);
-            menuStrip2.Items.AddRange(new ToolStripItem[] { toolStripMenuItem7, toolStripMenuItem11 });
-            menuStrip2.Location = new Point(0, 0);
+            menuStrip2.Items.AddRange(new ToolStripItem[] { toolStripMenuItem7, toolStripMenuItem11, toolStripMenuItem1 });
+            menuStrip2.Location = new Point(0, 9);
             menuStrip2.Name = "menuStrip2";
-            menuStrip2.Padding = new Padding(7, 3, 0, 3);
-            menuStrip2.Size = new Size(1355, 30);
+            menuStrip2.Size = new Size(54, 28);
             menuStrip2.TabIndex = 2;
             menuStrip2.Text = "menuStrip2";
             // 
@@ -238,14 +239,14 @@
             toolStripMenuItem7.DropDownItems.AddRange(new ToolStripItem[] { cadastrarToolStripMenuItem, toolStripMenuItem10, históricoToolStripMenuItem });
             toolStripMenuItem7.Image = (Image)resources.GetObject("toolStripMenuItem7.Image");
             toolStripMenuItem7.Name = "toolStripMenuItem7";
-            toolStripMenuItem7.Size = new Size(47, 24);
+            toolStripMenuItem7.Size = new Size(42, 24);
             toolStripMenuItem7.Text = " ";
             // 
             // cadastrarToolStripMenuItem
             // 
             cadastrarToolStripMenuItem.Image = (Image)resources.GetObject("cadastrarToolStripMenuItem.Image");
             cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            cadastrarToolStripMenuItem.Size = new Size(155, 26);
+            cadastrarToolStripMenuItem.Size = new Size(184, 26);
             cadastrarToolStripMenuItem.Text = "Cadastrar";
             cadastrarToolStripMenuItem.Click += cadastrarToolStripMenuItem_Click;
             // 
@@ -253,7 +254,7 @@
             // 
             toolStripMenuItem10.Image = (Image)resources.GetObject("toolStripMenuItem10.Image");
             toolStripMenuItem10.Name = "toolStripMenuItem10";
-            toolStripMenuItem10.Size = new Size(155, 26);
+            toolStripMenuItem10.Size = new Size(184, 26);
             toolStripMenuItem10.Text = "Pedido";
             toolStripMenuItem10.Click += toolStripMenuItem10_Click;
             // 
@@ -261,7 +262,7 @@
             // 
             históricoToolStripMenuItem.Image = (Image)resources.GetObject("históricoToolStripMenuItem.Image");
             históricoToolStripMenuItem.Name = "históricoToolStripMenuItem";
-            históricoToolStripMenuItem.Size = new Size(155, 26);
+            históricoToolStripMenuItem.Size = new Size(184, 26);
             históricoToolStripMenuItem.Text = "Histórico";
             históricoToolStripMenuItem.Click += históricoToolStripMenuItem_Click;
             // 
@@ -270,43 +271,48 @@
             toolStripMenuItem11.DropDownItems.AddRange(new ToolStripItem[] { loginToolStripMenuItem, cadastrarToolStripMenuItem1 });
             toolStripMenuItem11.Image = (Image)resources.GetObject("toolStripMenuItem11.Image");
             toolStripMenuItem11.Name = "toolStripMenuItem11";
-            toolStripMenuItem11.Size = new Size(47, 24);
+            toolStripMenuItem11.Size = new Size(42, 24);
             toolStripMenuItem11.Text = " ";
             // 
             // loginToolStripMenuItem
             // 
             loginToolStripMenuItem.Image = (Image)resources.GetObject("loginToolStripMenuItem.Image");
             loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            loginToolStripMenuItem.Size = new Size(155, 26);
+            loginToolStripMenuItem.Size = new Size(124, 22);
             loginToolStripMenuItem.Text = "Login";
             // 
             // cadastrarToolStripMenuItem1
             // 
             cadastrarToolStripMenuItem1.Image = (Image)resources.GetObject("cadastrarToolStripMenuItem1.Image");
             cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            cadastrarToolStripMenuItem1.Size = new Size(155, 26);
+            cadastrarToolStripMenuItem1.Size = new Size(124, 22);
             cadastrarToolStripMenuItem1.Text = "Cadastrar";
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(12, 24);
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Top;
             pictureBox2.BackColor = Color.CadetBlue;
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Location = new Point(-519, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1355, 61);
+            pictureBox2.Size = new Size(2102, 46);
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Bottom;
             button1.BackColor = Color.FromArgb(64, 64, 64);
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(586, 529);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(441, 396);
             button1.Name = "button1";
-            button1.Size = new Size(140, 40);
+            button1.Size = new Size(84, 30);
             button1.TabIndex = 24;
             button1.Text = "SAIR";
             button1.UseVisualStyleBackColor = false;
@@ -314,43 +320,53 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.BackColor = Color.CadetBlue;
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(612, 12);
+            label1.Location = new Point(445, 9);
             label1.Name = "label1";
-            label1.Size = new Size(101, 38);
+            label1.Size = new Size(80, 30);
             label1.TabIndex = 3;
             label1.Text = "HOME";
+            label1.Click += label1_Click;
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.BackColor = Color.PeachPuff;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-23, 54);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1378, 617);
+            pictureBox1.Size = new Size(1028, 493);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(menuStrip2);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(groupBox2);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1028, 496);
+            panel1.TabIndex = 25;
+            // 
             // home
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1355, 655);
-            Controls.Add(label1);
+            ClientSize = new Size(1020, 491);
             Controls.Add(button1);
-            Controls.Add(menuStrip2);
-            Controls.Add(pictureBox2);
-            Controls.Add(groupBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
             Name = "home";
             Text = " ";
             WindowState = FormWindowState.Maximized;
@@ -361,8 +377,9 @@
             menuStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -396,5 +413,7 @@
         private Label label1;
         private ToolStripMenuItem históricoToolStripMenuItem;
         private PictureBox pictureBox1;
+        private Panel panel1;
+        private ToolStripMenuItem toolStripMenuItem1;
     }
 }

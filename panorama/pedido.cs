@@ -189,5 +189,10 @@ namespace costura
 
             this.Hide();
         }
+
+        private void lbl_pedido_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
